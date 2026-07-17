@@ -33,3 +33,12 @@
     'Мога да Ви помогна да запазите, промените или отмените час.'
   ]
 });
+window.addEventListener('open-n8n-chat', () => {
+  const toggle = document.querySelector('.chat-window-toggle');
+
+  if (toggle) {
+    toggle.click();
+  } else {
+    console.error('Не намерих бутона на n8n чата.');
+  }
+});
